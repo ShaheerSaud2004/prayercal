@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prayercal"
+version = "0.1.0"
+description = "Accurate prayer times and subscribable .ics calendars from your coordinates. Zero dependencies."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "ShaheerSaud2004" }]
+keywords = ["prayer times", "salah", "islam", "ical", "ics", "calendar", "hijri"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Scheduling",
+    "Topic :: Religion",
+]
+
+[project.urls]
+Homepage = "https://github.com/ShaheerSaud2004/prayercal"
+Issues = "https://github.com/ShaheerSaud2004/prayercal/issues"
+
+[project.scripts]
+prayercal = "prayercal.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["prayercal*"]
