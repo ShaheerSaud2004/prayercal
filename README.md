@@ -38,7 +38,7 @@ The tests compare 64 times (8 places and dates × 8 events) with an independent 
 
 - Python 3.9+ standard library only (`zoneinfo` for time zones)
 - Solar position from the U.S. Naval Observatory's approximate solar-coordinate formulas, which are accurate to about one arcminute
-- `unittest` tests, run in GitHub Actions on Python 3.9–3.13
+- `unittest` tests, run in GitHub Actions on Python 3.10–3.13 (3.9 is supported but no longer available on GitHub's runners)
 
 ## Install
 
